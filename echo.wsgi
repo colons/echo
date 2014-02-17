@@ -17,7 +17,7 @@ def index(name="index"):
         'POST': bottle.request.forms,
     }
 
-    return bottle.template('page', dictionaries=dictionaries)
+    return bottle.template('page.html', dictionaries=dictionaries)
 
 application = bottle.default_app()
 
